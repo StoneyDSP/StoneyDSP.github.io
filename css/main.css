@@ -1,0 +1,49 @@
+:root {
+  --primary-colour: cornflowerblue;
+  --links-colour: slateblue;
+}
+
+body {
+  background: #201f1f;
+  margin: 0;
+  font-family: "Cascadia Mono";
+  color: rgb(197, 194, 194);
+}
+
+.navbar {
+  background: #4b4646;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightgrey;
+  font-size: 1.2em;
+}
+.navbar .logo span {
+  color: var(--primary-colour);
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: var(--links-colour);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}/*# sourceMappingURL=main.css.map */
