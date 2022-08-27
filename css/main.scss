@@ -113,7 +113,8 @@ section.features-section {
 ul.features-list {
     margin: 0;
     padding: .1em;
-    //display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
     li {
         font-size: 1.1em;
@@ -242,4 +243,63 @@ nav {
     float: right;
     margin: .5em;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+
+        display: none;
+    }
+
+    .navbar .container {
+
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: lightgrey;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+
+            font-weight: bold;
+
+        }
+
+        li.donate-button-cta a {
+            color: var(--primary-colour);
+            border: 3px solid var(--primary-colour);
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+
+            &:hover {
+                background: var(--primary-colour);
+                color: antiquewhite;
+            }
+        }
+    }
+
 }
