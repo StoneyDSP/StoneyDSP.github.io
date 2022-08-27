@@ -67,12 +67,14 @@ section {
         font-weight: bold;
         color: grey;
         letter-spacing: .3em;
+        text-align: center;
     }
 
     h1 {
         font-size: 2.5em;
         line-height: 1.3em;
         margin-top: .2em;
+        text-align: center;
     }
 
     .primary-cta {
@@ -302,4 +304,94 @@ nav {
         }
     }
 
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 4em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .left-column {
+            margin: 3em 3em 0 2em;
+
+            h1 {
+                font-size: 1em;
+                width: 90%;
+            }
+        }
+    }
+
+    .hero-image {
+        width: 50%;
+        margin-right: -1em;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+
+    .primary-cta {
+        margin-right: 1em;
+    }
+
+    ul.features-list {
+        display: block;
+        margin-left: 5em;
+
+        li {
+            font-size: 1.4em;
+
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .features-section {
+        position: relative;
+    }
+
+    .features-section img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+        border-radius: 5%;
+    }
+
+    .featured-projects ul {
+        display: flex;
+
+        li {
+            margin: 0 1em;
+        }
+    }
+
+    .contact-section {
+        position: relative;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+    }
 }
