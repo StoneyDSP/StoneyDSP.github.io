@@ -1,0 +1,305 @@
+
+:root {
+    --primary-colour: cornflowerblue;
+    --links-colour: slateblue;
+    --fore-ground: #4b4646;
+}
+
+body {
+    background: #201f1f;
+    margin: 0;
+    font-family: 'Cascadia Mono';
+    color:rgb(197, 194, 194);
+
+}
+
+.navbar {
+    background: #4b4646;
+    padding: 1em;
+
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: lightgrey;
+        font-size: 1.2em;
+
+        span {
+            color: var(--primary-colour);
+        }
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+a {
+    color: var(--links-colour);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.left-column {
+
+    .subheader {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: grey;
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    .primary-cta {
+        background: var(--links-colour);
+        color: antiquewhite;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 5em;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .my-git-cta {
+        display: block;
+        margin-top: 1em;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        font-weight: bold;
+
+        img {
+            margin-right: .5em;
+        }
+    }
+}
+
+.hero-image {
+    width: 70%;
+    margin-top: 3em;
+}
+
+section.features-section {
+    background: var(--fore-ground);
+    color: lightgrey;
+}
+
+ul.features-list {
+    margin: 0;
+    padding: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before {
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../assets/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+
+}
+
+.features-section img {
+    display: none;
+}
+
+.featured-projects {
+
+    background:#201f1f;
+    color: antiquewhite;
+
+    li {
+
+        background:var(--fore-ground);
+        text-align: center;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+
+        img {
+            width: 40%;
+            margin-top: 3em;
+            border: 2px solid antiquewhite;
+            border-radius: 5%;
+            margin-top: -4.5em;
+        }
+    }
+
+}
+
+h2 {
+
+    font-size: 2em;
+}
+
+label {
+
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid antiquewhite;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-colour);
+    color:antiquewhite;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    cursor: pointer;
+}
+
+.contact-right {
+    background-color: var(--fore-ground)
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background-color: var(--fore-ground);
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+
+        a {
+
+            color: antiquewhite;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit {
+
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+
+        display: none;
+    }
+
+    .navbar .container {
+
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: lightgrey;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+
+            font-weight: bold;
+
+        }
+
+        li.donate-button-cta a {
+            color: var(--primary-colour);
+            border: 3px solid var(--primary-colour);
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+
+            &:hover {
+                background: var(--primary-colour);
+                color: antiquewhite;
+            }
+        }
+    }
+
+}
