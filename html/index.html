@@ -13,11 +13,13 @@
 <body>
     <div class="navbar">
         <div class="container">
-            <a href="index.html"><span>StoneyDSP</span></a>
+            <a class="logo" href="#"><span>::</span> StoneyDSP <span>::</span></a>
 
-            <img src="assets/mobile-menu-1.svg" alt="Open Navigation">
+
+            <img id="mobile-cta" class="mobile-menu" src="../Assets/menu.svg" alt="Open Navigation">
 
             <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="../Assets/exit.svg" alt="Close Navigation">
                 <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">Projects</a></li>
@@ -25,10 +27,96 @@
                 </ul>
                 <ul class="secondary-nav">
                     <li><a href="#">Contact</a></li>
-                    <li class="donate-button"><a href="#">Donate</a></li>
+                    <li class="donate-button-cta"><a href="#">Donate</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-column">
+                <p class="subheader">Audio software developer</p>
+                <h1>Delivering custom audio DSP modules and continuous integration pipeline workflows to suit your needs.</h1>
+                <div class="hero-cta"></div>
+                <a href="#" class="primary-cta">My Projects</a>
+                <a href="#" class="my-git-cta">
+                    <img src="../Assets/GitHub-Mark-Light-64px.png" alt="Link to my GitHub">My GitHub</a>
+            </div>
+            <img src="../Assets/eg.png" class="hero-image" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Boutique hand-crafted audio DSP code</li>
+                <li>Modern tools, modern workflows, modern results</li>
+                <li>Real-time collaboration and live-share coding</li>
+                <li>Fully integrated development and deployment pipelines</li>
+                <li>Flexible, organized, and collaborative</li>
+            </ul>
+            <img src="../Assets/Nathan-Guinardo-1.jpg" alt="Nathan @ StoneyDSP">
+        </div>
+    </section>
+
+    <section class="featured-projects">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="../Assets/Biquad-AutoGUI.png" alt="Biquads">
+                    <blockquote>"Biquadratic filters with four transform arrangements and optional oversmapling."</blockquote>
+                    <cite>- View source</cite>
+                </li>
+                <li>
+                    <img src="../Assets/Orf-AutoGUI-1-1-0b.png" alt="Orphanidis">
+                    <blockquote>"Orfanidis-style peak filter with four transform arrangements and no frequency warping."</blockquote>
+                    <cite>- View source</cite>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <p ><a href="https://paypal.me/StoneyDSPAudio?country.x=ES&amp;locale.x=en_US"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="" class="inline"/></a> </p>
+                <p ><a href="https://twitter.com/Stoney_DSP/"><img src="https://github.com/StoneyDSP/StoneyDSP/blob/main/Assets/twitter.png?raw=true" alt="" class="inline"/></a> <a href="https://www.instagram.com/stoney.d.s.p/"><img src="https://github.com/StoneyDSP/StoneyDSP/blob/main/Assets/instagram.png?raw=true" alt="" class="inline"/></a> <a href="https://www.facebook.com/StoneyDSP.Audio/"><img src="https://github.com/StoneyDSP/StoneyDSP/blob/main/Assets/facebook.png?raw=true" alt="" class="inline"/></a> </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
 </body>
 </html>
