@@ -1,0 +1,31 @@
+stoneydsp.com
+www.stoneydsp.com
+
+https://stoneydsp.github.io/index.html
+https://stoneydsp.github.io/Biquads/index.html
+https://stoneydsp.github.io/CMakeProject1/index.html
+https://stoneydsp.github.io/ConsoleApplication/index.html
+https://stoneydsp.github.io/StoneyDSP/index.html
+
+nathan@stoneydsp.com
+
+@StoneyDSP
+
+
+MASTER WEB FOLDER: StoneyDSP.github.io
+
+https://StoneyDSP.github.io/assets/
+https://StoneyDSP.github.io/css
+https://StoneyDSP.github.io/html
+
+
+MASTER WORKSPACE FOLDER: StoneyDSP
+
+
+Visual Studio fonts and colours
+
+font family: Cascadia Mono
+font size: 10
+
+item foreground: R 220, G 220, B 220
+item background: R 30, G 30, B 30
