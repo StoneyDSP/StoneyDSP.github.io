@@ -7,10 +7,6 @@
 	"public": false,
 	"framework": null,
 	"functions": {
-		"api/vitals/index.js": {
-			"memory": 1024,
-			"maxDuration": 10
-		},
 		"api/headers/index.js": {
 			"memory": 1024,
 			"maxDuration": 10
