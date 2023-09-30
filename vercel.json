@@ -7,7 +7,15 @@
 	"public": false,
 	"framework": null,
 	"functions": {
-		"api/headers/index.js": {
+		"api/decode/index.js": {
+			"memory": 1024,
+			"maxDuration": 10
+		},
+		"api/encode/index.js": {
+			"memory": 1024,
+			"maxDuration": 10
+		},
+		"api/index.js": {
 			"memory": 1024,
 			"maxDuration": 10
 		},
@@ -21,9 +29,42 @@
 			"source": "/(.html)",
 			"headers": [
 				{
+					"key": "Access-Control-Allow-Origin",
+					"value": "*"
+				},
+				{
 					"key": "X-UA-Compatible",
 					"value": "ie-edge"
 				},
+				{
+					"key": "Vercel-CDN-Cache-Control",
+					"value": "max-age=3600"
+				},
+				{
+					"key": "CDN-Cache-Control",
+					"value": "max-age=60"
+				},
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=10, s-maxage=86400, immutable"
+				},
+				{
+					"key": "X-DNS-Prefetch-Control",
+					"value": "on"
+				},
+				{
+					"key": "X-XSS-Protection",
+					"value": "1; mode=block"
+				},
+				{
+					"key": "Strict-Transport-Security",
+					"value": "max-age=63072000; includeSubDomains; preload"
+				}
+			]
+		},
+		{
+			"source": "github-readme-stats.stoneydsp.com/(.*)",
+			"headers": [
 				{
 					"key": "Vercel-CDN-Cache-Control",
 					"value": "max-age=3600"
@@ -43,23 +84,6 @@
 			]
 		},
 		{
-			"source": "github-readme-stats.stoneydsp.com/(.*)",
-			"headers": [
-				{
-					"key": "Vercel-CDN-Cache-Control",
-					"value": "max-age=3600"
-				},
-				{
-					"key": "CDN-Cache-Control",
-					"value": "max-age=60"
-				},
-				{
-					"key": "Cache-Control",
-					"value": "public, max-age=10, s-maxage=86400, immutable"
-				}
-			]
-		},
-		{
 			"source": "skillicons.dev/",
 			"headers": [
 				{
@@ -73,6 +97,10 @@
 				{
 					"key": "Cache-Control",
 					"value": "public, max-age=10, s-maxage=86400, immutable"
+				},
+				{
+					"key": "X-XSS-Protection",
+					"value": "1; mode=block"
 				}
 			]
 		},
@@ -106,10 +134,25 @@
 					"key": "authorized"
 				}
 			],
-		"headers": [
+		  "headers": [
 				{
 					"key": "x-authorized",
 					"value": "true"
+				}
+			]
+		},
+		{
+			"source": "/:path*",
+			"missing": [
+				{
+					"type": "query",
+					"key": "authorized"
+				}
+			],
+		  "headers": [
+				{
+					"key": "x-authorized",
+					"value": "false"
 				}
 			]
 		}
@@ -117,75 +160,91 @@
 	"redirects": [
     {
       "source": "/.env",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/.git/",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/v1/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/v2/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/v3/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/v4/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/user/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/user/v1/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/user/v2/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/user/v3/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/user/v4/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/admin/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/admin/v1/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/admin/v2/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/admin/v3/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		},
 		{
 			"source": "/api/admin/v4/.git/config",
-			"destination": "/404.html"
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
+		},
+		{
+			"source": "/Public/home/js/check.js",
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
+    },
+		{
+			"source": "/api/pin/",
+			"destination": "https://github-readme-stats.vercel.app/api/pin/"
+		},
+		{
+			"source": "/api/top-langs/",
+			"destination": "https://github-readme-stats.vercel.app/api/top-langs/"
+		},
+		{
+			"source": "/",
+			"destination": "https://www.stoneydsp.com/api?query=whoami"
 		}
 	]
 }
