@@ -7,19 +7,7 @@
 	"public": false,
 	"framework": null,
 	"functions": {
-		"api/decode/index.js": {
-			"memory": 1024,
-			"maxDuration": 10
-		},
-		"api/encode/index.js": {
-			"memory": 1024,
-			"maxDuration": 10
-		},
-		"api/index.js": {
-			"memory": 1024,
-			"maxDuration": 10
-		},
-		"api/db/index.ts": {
+		"api/418/index.js": {
 			"memory": 1024,
 			"maxDuration": 10
 		}
@@ -160,91 +148,91 @@
 	"redirects": [
     {
       "source": "/.env",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/.git/",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/v1/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/v2/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/v3/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/v4/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/user/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/user/v1/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/user/v2/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/user/v3/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/user/v4/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/admin/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/admin/v1/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/admin/v2/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/admin/v3/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/admin/v4/.git/config",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/Public/home/js/check.js",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
     },
 		{
 			"source": "/api/pin/",
-			"destination": "https://github-readme-stats.vercel.app/api/pin/"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/api/top-langs/",
-			"destination": "https://github-readme-stats.vercel.app/api/top-langs/"
+			"destination": "/api/418/?query=whoami"
 		},
 		{
 			"source": "/",
-			"destination": "https://www.stoneydsp.com/api?query=whoami"
+			"destination": "/api/418/?query=whoami"
 		}
 	]
 }
