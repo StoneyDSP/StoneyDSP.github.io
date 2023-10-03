@@ -1,30 +1,32 @@
 @charset "UTF-8";
-@import url("../../../src/assets/css/framework/fonts/microsoft/cascadia/font-cascadia-dynamic.css") layer(fontFace);
+@import url("https://www.stoneydsp.com/src/assets/css/framework/fonts/microsoft/cascadia/font-cascadia-dynamic.css") layer(fontFace);
 /* @import url("../../src/assets/css/framework/reset.css") layer(reset); */
-@import url("../../../src/assets/css/framework/support.css") layer(defaults.support);
-@import url("../../../src/assets/css/framework/defaults.css") layer(defaults);
-@import url("../../../src/assets/css/framework/global.css") layer(global);
+@import url("https://www.stoneydsp.com/src/assets/css/framework/support.css") layer(defaults.support);
+@import url("https://www.stoneydsp.com/src/assets/css/framework/defaults.css") layer(defaults);
+@import url("https://www.stoneydsp.com/src/assets/css/framework/global.css") layer(global);
 /* @import url("../../src/assets/css/framework/helpers.css") layer(global.helpers); */
 /* @import url("../src/assets/css/framework/animations/animations.css") layer(site.animations); */
-@import url("../../../src/assets/css/framework/site.css") layer(site);
+@import url("https://www.stoneydsp.com/src/assets/css/framework/site.css") layer(site);
 /* @import url("../../src/assets/css/framework/components/header.css") layer(header); */
 /* @import url("./framework/components/footer.css") layer(footer); */
 
 /* @import url("../../src/assets/css/framework/debug/dbg.css") layer(site.dbg); */
 /* @import url("../../src/assets/css/framework/debug/lint.css") layer(site.dbg.lint); */
 
-@import url("../../../src/assets/css/doxygen/doxygen.css") layer(site.doxygen);
-@import url("../../../src/assets/css/doxygen/tabs.css") layer(site.doxygen.tabs);
-@import url("../../../src/assets/css/doxygen/search.css") layer(site.doxygen.search);
+@import url("https://www.stoneydsp.com/src/assets/css/doxygen/doxygen.css") layer(site.doxygen);
+@import url("https://www.stoneydsp.com/src/assets/css/doxygen/tabs.css") layer(site.doxygen.tabs);
+@import url("https://www.stoneydsp.com/src/assets/css/doxygen/search.css") layer(site.doxygen.search);
 
 html {
 	--colour-dull: hsla(0, 0%, 0%, 50%);
 
-	--brand-logo-512x96: url("../../../public/StoneyDSP-Regular-512x96d.svg");
+	--brand-logo-512x96: url("https://www.stoneydsp.com/public/StoneyDSP-Regular-512x96d.svg");
 
-	--powered-by-vercel: url("../../../public/powered-by-vercel_d.svg");
-	--table-gradient: url("../../../src/assets/css/doxygen/tab_b.png");
-	--table-row-gradient: ("../../../src/assets/css/doxygen/doxygen/nav_h.png");
+	--powered-by-vercel: url("https://www.stoneydsp.com/public/powered-by-vercel_d.svg");
+	--table-gradient: url("https://www.stoneydsp.com/src/assets/css/doxygen/tab_b.png");
+	--table-row-gradient: ("https://www.stoneydsp.com/src/assets/css/doxygen/doxygen/nav_h.png");
+
+	--icon-home: url("https://www.stoneydsp.com/public/icon__1024x768.png");
 
 	--git-stats-card: url("https://github-readme-stats.vercel.app/api?username=nathanjhood&show_icons=true&theme=default");
 
@@ -48,16 +50,24 @@ html {
 	--card-repo__cmodule: url("https://github-readme-stats.vercel.app/api/pin/?username=nathanjhood&repo=cmodule&theme=default");
 	--card-repo__audioplugin-svf: url("https://github-readme-stats.vercel.app/api/pin/?username=nathanjhood&repo=AudioPlugin-svf&theme=default");
 	--card-repo__audioplugin: url("https://github-readme-stats.vercel.app/api/pin/?username=nathanjhood&repo=AudioPlugin&theme=default");
+
+	--icon-social__github: url("https://www.stoneydsp.com/public/icon__github.svg");
+	--icon-social__facebook: url("https://www.stoneydsp.com/public/icon__facebook.svg");
+	--icon-social__instagram: url("https://www.stoneydsp.com/public/icon__insta.svg");
+	--icon-social__twitter: url("https://www.stoneydsp.com/public/icon__twitter.svg");
+	--icon-social__linkedin: url("https://www.stoneydsp.com/public/icon__linkedin.svg");
 }
 
 html.dark-mode {
 	--colour-dull: hsla(0, 0%, 100%, 50%);
 
-	--brand-logo-512x96: url("../../../public/StoneyDSP-Regular-512x96.svg");
+	--brand-logo-512x96: url("https://www.stoneydsp.com/public/StoneyDSP-Regular-512x96.svg");
 
-	--powered-by-vercel: url("../../../public/powered-by-vercel.svg");
-	--table-gradient: url("../../../src/assets/css/doxygen/tab_bd.png");
-	--table-row-gradient: ("../../../src/assets/css/doxygen/nav_hd.png");
+	--powered-by-vercel: url("https://www.stoneydsp.com/public/powered-by-vercel.svg");
+	--table-gradient: url("https://www.stoneydsp.com/src/assets/css/doxygen/tab_bd.png");
+	--table-row-gradient: ("https://www.stoneydsp.com/src/assets/css/doxygen/nav_hd.png");
+
+	--icon-home: url("https://www.stoneydsp.com/public/icon__1024x768.png");
 
 	--git-stats-card: url("https://github-readme-stats.vercel.app/api?username=nathanjhood&show_icons=true&theme=dark");
 
@@ -81,7 +91,35 @@ html.dark-mode {
 	--card-repo__cmodule: url("https://github-readme-stats.vercel.app/api/pin/?username=nathanjhood&repo=cmodule&theme=dark");
 	--card-repo__audioplugin-svf: url("https://github-readme-stats.vercel.app/api/pin/?username=nathanjhood&repo=AudioPlugin-svf&theme=dark");
 	--card-repo__audioplugin: url("https://github-readme-stats.vercel.app/api/pin/?username=nathanjhood&repo=AudioPlugin&theme=dark");
+
+	--icon-social__github: url("https://www.stoneydsp.com/public/icon__githubd.svg");
+	--icon-social__facebook: url("https://www.stoneydsp.com/public/icon__facebookd.svg");
+	--icon-social__instagram: url("https://www.stoneydsp.com/public/icon__instad.svg");
+	--icon-social__twitter: url("https://www.stoneydsp.com/public/icon__twitterd.svg");
+	--icon-social__linkedin: url("https://www.stoneydsp.com/public/icon__linkedind.svg");
 }
+
+img.icon__home {
+	background-image: var(--icon-home);
+	background-position: center;
+	background-size: contain;
+}
+
+img.icon-social {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+img.icon-social__github { background-image: var(--icon-social__github);}
+img.icon-social__facebook { background-image: var(--icon-social__facebook);}
+img.icon-social__instagram { background-image: var(--icon-social__instagram);}
+img.icon-social__twitter { background-image: var(--icon-social__twitter);}
+img.icon-social__linkedin { background-image: var(--icon-social__linkedin);}
+
+/* .http {
+	background-image: var(--http-headers);
+} */
 
 img.brand-logo-512x96 { background-image: var(--brand-logo-512x96);}
 
@@ -287,4 +325,54 @@ a.projectname:hover {
 	transition-property: background-color, box-shadow;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in-out;
+}
+
+.transition__trans_glow {
+	box-shadow: none;
+	background-color: none;
+
+	-webkit-transition-property: background-color, box-shadow;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-property: background-color, box-shadow;
+	-moz-transition-duration: 0.5s;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-property: background-color, box-shadow;
+	-ms-transition-duration: 0.5s;
+	-ms-transition-timing-function: ease-in-out;
+	-o-transition-property: background-color, box-shadow;
+	-o-transition-duration: 0.5s;
+	-o-transition-timing-function: ease-in-out;
+	transition-property: background-color, box-shadow;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.transition__trans_glow:hover {
+	background-color: var(--glow-color);
+	box-shadow: 0 0 2.0rem var(--glow-color);
+
+	-webkit-transition-property: background-color, box-shadow;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-property: background-color, box-shadow;
+	-moz-transition-duration: 0.5s;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-property: background-color, box-shadow;
+	-ms-transition-duration: 0.5s;
+	-ms-transition-timing-function: ease-in-out;
+	-o-transition-property: background-color, box-shadow;
+	-o-transition-duration: 0.5s;
+	-o-transition-timing-function: ease-in-out;
+	transition-property: background-color, box-shadow;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+
+a.footer-icon {
+	padding: 1rem;
+}
+a.footer-icon:hover {
+	text-decoration: none;
 }
