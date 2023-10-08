@@ -27,7 +27,8 @@
     "wipe": "yarn clean && rm -rvf node_modules"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.2"
+    "@vercel/analytics": "^1.0.2",
+    "@vercel/edge": "^1.1.0"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.19.1",
@@ -38,7 +39,7 @@
     "typescript": "*"
   },
   "files": [
-		"./api",
+    "./api",
     "./public"
   ],
   "browserslist": [

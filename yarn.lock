@@ -239,6 +239,11 @@
   resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-7.2.1.tgz#bf453d0b83368ecc3f1ae4c12b7e4e0907e151c9"
   integrity sha512-WCqSBCPNlANEOsmroCzCZq6ZxArV20RHBbdaZzhZjkGtEReSZx5BSOsrnkewFJFuu5pNGYegAaVi0VCkA1irZQ==
 
+"@vercel/edge@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@vercel/edge/-/edge-1.1.0.tgz#1a0cf6487d45b89a26d70d91e8f34c95a06e7df3"
+  integrity sha512-84H2EavY5Kul9Ef1DnTH0XEG5vChqcXjyqoRLVPjjZjLWw47sMapzXXQH09pybcshR+8AKqULGvFqPTWuRh3Rw==
+
 "@vercel/error-utils@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-2.0.1.tgz#ea16a69542fe18013ff4f4a93dfc0d2fea9cae64"
@@ -1610,11 +1615,6 @@ v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
   integrity sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==
-
-web-vitals@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-3.4.0.tgz#45ed33a3a2e029dc38d36547eb5d71d1c7e2552d"
-  integrity sha512-n9fZ5/bG1oeDkyxLWyep0eahrNcPDF6bFqoyispt7xkW0xhDzpUBTgyDKqWDi1twT0MgH4HvvqzpUyh0ZxZV4A==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
