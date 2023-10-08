@@ -6,18 +6,28 @@
 	"outputDirectory": ".",
 	"public": false,
 	"framework": null,
-	"functions": {
-		"api/418/index.js": {
-			"memory": 1024,
-			"maxDuration": 10
-		}
-	},
 	"headers": [
 		{
 			"source": "/(.html)",
 			"headers": [
 				{
+					"key": "Referrer-Policy",
+					"value": "origin-when-cross-origin"
+				},
+				{
 					"key": "Access-Control-Allow-Origin",
+					"value": "*"
+				},
+				{
+					"key": "Access-Control-Allow-Headers",
+					"value": "authorization, x-client-info, apikey, content-type"
+				},
+				{
+					"key": "Access-Control-Allow-Methods",
+					"value": "POST, GET, OPTIONS"
+				},
+				{
+					"key": "Access-Control-Allow-Methods",
 					"value": "*"
 				},
 				{
@@ -51,7 +61,7 @@
 			]
 		},
 		{
-			"source": "github-readme-stats.stoneydsp.com/(.*)",
+			"source": "github-readme-stats.vercel.app/(.*)",
 			"headers": [
 				{
 					"key": "Vercel-CDN-Cache-Control",
@@ -148,91 +158,147 @@
 	"redirects": [
     {
       "source": "/.env",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=whoami"
 		},
 		{
 			"source": "/.git/",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/v1/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/v2/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/v3/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/v4/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/user/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/user/v1/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/user/v2/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/user/v3/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/user/v4/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/admin/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/admin/v1/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/admin/v2/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/admin/v3/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/api/admin/v4/.git/config",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
 			"source": "/Public/home/js/check.js",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
     },
 		{
+			"source": "/static/admin/javascript/hetong.js",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
 			"source": "/api/pin/",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api?query=teapot&status=418"
 		},
 		{
 			"source": "/api/top-langs/",
-			"destination": "/api/418/?query=whoami"
+			"destination": "/api/418?query=teapot&status=418"
 		},
 		{
-			"source": "/",
-			"destination": "/api/418/?query=whoami"
+			"source": "/wp-login.php",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/api/",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/.vscode/sftp.json",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/config.json",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/_all_dbs",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/server-status",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/.aws/credentials",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/.gitlab-ci.yml",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/wp-config.php-backup",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/Dockerrun.aws.json",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/s3cmd.ini",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+			"source": "/.svn/entries",
+			"destination": "/api/418?query=teapot&status=418"
+		},
+		{
+      "source": "/.whoami",
+			"destination": "/api?query=whoami"
 		}
 	]
 }
