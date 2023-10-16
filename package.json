@@ -27,7 +27,7 @@
     "wipe": "yarn clean && rm -rvf node_modules"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.2"
+    "@vercel/analytics": "^1.1.1"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.19.1",
