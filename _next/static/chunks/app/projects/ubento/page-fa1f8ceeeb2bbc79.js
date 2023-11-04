@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[815],{3391:function(n,e,t){Promise.resolve().then(t.t.bind(t,508,23)),Promise.resolve().then(t.t.bind(t,8326,23))},508:function(n){n.exports={container:"ubento_container__FT2SG",content:"ubento_content__k97Z_"}}},function(n){n.O(0,[326,971,472,744],function(){return n(n.s=3391)}),_N_E=n.O()}]);

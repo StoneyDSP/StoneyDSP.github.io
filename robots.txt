@@ -1,5 +1,5 @@
-User-agent: *
+User-Agent: *
 Allow: /
-Disallow: /src/
+Disallow: /private/
 
 Sitemap: https://www.stoneydsp.com/sitemap.xml

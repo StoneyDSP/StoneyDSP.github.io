@@ -1,0 +1,18 @@
+/* TEAM */
+
+	Chef, UI developer, One eyed illustrator, Standard Man, Web designer: Nathan J. Hood
+	LinkedIn: https://www.linkedin.com/in/nathan-hood-ab219111b/
+	From: Bristol, UK
+
+
+/* THANKS */
+
+	Rodrigo, Karlos & team @ Supabase support
+
+
+/* SITE */
+
+	Last update:2023/10/13
+	Language: English
+	Doctype:HTML5
+	IDE: VSCode
